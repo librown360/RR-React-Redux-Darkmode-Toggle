@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-import dataSlice from './features/dataSlice'
+import modeReducer from './features/modeSlice'
 
 export const store = configureStore({
     reducer: {
-        mode: dataSlice
+        mode: modeReducer
     }
 })

@@ -22,7 +22,7 @@ const mode2 = {
 
 const initialState = mode2
 
-export const dataSlice = createSlice({
+export const modeSlice = createSlice({
     name: 'mode',
     initialState,
     reducers: {
@@ -35,6 +35,6 @@ export const dataSlice = createSlice({
     }
 })
 
-export const { lightMode, darkMode } = dataSlice.actions
+export const { lightMode, darkMode } = modeSlice.actions
 
-export default dataSlice.reducer
+export default modeSlice.reducer
